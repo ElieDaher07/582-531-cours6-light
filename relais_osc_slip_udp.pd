@@ -1,0 +1,16 @@
+#N canvas 827 239 527 327 12;
+#X msg 114 110 devices;
+#X msg 230 110 baud 115200 \, open 4;
+#X msg 386 110 close;
+#X obj 114 203 comport;
+#X obj 114 255 pdchoco/slip_parse;
+#X obj 114 424 netsend -u -b;
+#X msg 240 368 disconnect;
+#X msg 240 339 connect 127.0.0.1 6004;
+#X connect 0 0 3 0;
+#X connect 1 0 3 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
+#X connect 6 0 5 0;
+#X connect 7 0 5 0 48......................D9+++O.....g++++C....vf++++.....L3+++uP....;
